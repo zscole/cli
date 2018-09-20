@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/zscole/cli/cmd/project"
-	"github.com/zscole/cli/cmd/templates"
+	"github.com/zscole/cli/project"
+	"github.com/zscole/cli/templates"
 )
 
 var addCmd = &cobra.Command{

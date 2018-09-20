@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/zscole/cli/cmd/project"
+	"github.com/zscole/cli/project"
 )
 
 func Fatal(v ...interface{}) {
