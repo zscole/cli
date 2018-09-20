@@ -563,22 +563,22 @@ func projectMigrations1_migrationsGo() (*asset, error) {
 	return a, nil
 }
 
-var _projectPerigordYamlTpl = "\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x7c\x8b\xc1\x0d\xc2\x30\x10\x04\xff\x57\xc5\x55\xe0\xfc\x5d\x04\x2d\x44\x91\x59\x81\x49\x62\x5b\xe7\x25\x08\x45\xee\x1d\x11\x0c\x4f\xf6\x35\x1a\xcd\x16\xcb\x37\x04\x7a\xdd\x77\xd7\xb9\x35\x59\x62\x40\xaa\x38\x6c\x67\x77\x9a\x56\xb4\x26\x92\xc0\x47\xb6\xb9\x7a\x51\x55\x3d\x63\xfb\xc0\x7b\x77\x5b\xbc\x0e\x5c\xcb\x70\x01\xaf\x63\xb1\xb8\x4d\xc4\x48\x54\x26\xf0\x90\x2e\x96\xf0\xeb\x67\x3c\x2b\xb3\xe1\xdf\xe9\xdb\xc8\x2b\x00\x00\xff\xff\xe5\x6e\xe0\x66\xaa\x00\x00\x00"
+var _projectCliYamlTpl = "\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x7c\x8b\xc1\x0d\xc2\x30\x10\x04\xff\x57\xc5\x55\xe0\xfc\x5d\x04\x2d\x44\x91\x59\x81\x49\x62\x5b\xe7\x25\x08\x45\xee\x1d\x11\x0c\x4f\xf6\x35\x1a\xcd\x16\xcb\x37\x04\x7a\xdd\x77\xd7\xb9\x35\x59\x62\x40\xaa\x38\x6c\x67\x77\x9a\x56\xb4\x26\x92\xc0\x47\xb6\xb9\x7a\x51\x55\x3d\x63\xfb\xc0\x7b\x77\x5b\xbc\x0e\x5c\xcb\x70\x01\xaf\x63\xb1\xb8\x4d\xc4\x48\x54\x26\xf0\x90\x2e\x96\xf0\xeb\x67\x3c\x2b\xb3\xe1\xdf\xe9\xdb\xc8\x2b\x00\x00\xff\xff\xe5\x6e\xe0\x66\xaa\x00\x00\x00"
 
-func projectPerigordYamlTplBytes() ([]byte, error) {
+func projectCliYamlTplBytes() ([]byte, error) {
 	return bindataRead(
-		_projectPerigordYamlTpl,
-		"project/perigord.yaml.tpl",
+		_projectCliYamlTpl,
+		"project/cli.yaml.tpl",
 	)
 }
 
-func projectPerigordYamlTpl() (*asset, error) {
-	bytes, err := projectPerigordYamlTplBytes()
+func projectCliYamlTpl() (*asset, error) {
+	bytes, err := projectCliYamlTplBytes()
 	if err != nil {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "project/perigord.yaml.tpl", size: 170, mode: os.FileMode(436), modTime: time.Unix(1517899410, 0)}
+	info := bindataFileInfo{name: "project/cli.yaml.tpl", size: 170, mode: os.FileMode(436), modTime: time.Unix(1517899410, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -771,7 +771,7 @@ var _bindata = map[string]func() (*asset, error){
 	"project/generate.go.tpl":            projectGenerateGoTpl,
 	"project/main.go.tpl":                projectMainGoTpl,
 	"project/migrations/1_Migrations.go": projectMigrations1_migrationsGo,
-	"project/perigord.yaml.tpl":          projectPerigordYamlTpl,
+	"project/cli.yaml.tpl":               projectCliYamlTpl,
 	"project/stub/README.md.tpl":         projectStubReadmeMdTpl,
 	"project/stub/main.go.tpl":           projectStubMainGoTpl,
 	"project/stub_test.go.tpl":           projectStub_testGoTpl,
@@ -860,7 +860,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 		"migrations": &bintree{nil, map[string]*bintree{
 			"1_Migrations.go": &bintree{projectMigrations1_migrationsGo, map[string]*bintree{}},
 		}},
-		"perigord.yaml.tpl": &bintree{projectPerigordYamlTpl, map[string]*bintree{}},
+		"cli.yaml.tpl": &bintree{projectCliYamlTpl, map[string]*bintree{}},
 		"stub": &bintree{nil, map[string]*bintree{
 			"README.md.tpl": &bintree{projectStubReadmeMdTpl, map[string]*bintree{}},
 			"main.go.tpl":   &bintree{projectStubMainGoTpl, map[string]*bintree{}},
