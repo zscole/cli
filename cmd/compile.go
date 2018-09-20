@@ -13,8 +13,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"bitbucket.org/whiteblockio/back_end/cli/project"
-	"bitbucket.org/whiteblockio/back_end/cli/templates"
+	"github.com/zscole/cli/project"
+	"github.com/zscole/cli/templates"
 )
 
 var compileCmd = &cobra.Command{

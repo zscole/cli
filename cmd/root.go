@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"bitbucket.com/wb/project"
+	"github.com/zscole/cli/cmd/project"
 )
 
 var RootCmd = &cobra.Command{

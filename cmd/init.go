@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"bitbucket.org/whiteblockio/back_end/cli/project"
-	"bitbucket.org/whiteblockio/back_end/cli/templates"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/zscole/cli/cmd/project"
+	"github.com/zscole/cli/cmd/templates"
 )
 
 var initCmd = &cobra.Command{
@@ -20,7 +20,7 @@ and the appropriate structure for a wb-based project.
   * If a name is provided, it will be created in the current directory;
   * If no name is provided, the current directory will be assumed;
   * If a relative path is provided, it will be created inside $GOPATH
-    (e.g. bitbucket.org/whiteblockio/back_end/cli);
+    (e.g. github.com/zscole/cli/);
   * If an absolute path is provided, it will be created;
   * If the directory already exists but is empty, it will be used.
 

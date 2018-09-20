@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"bitbucket.org/whiteblockio/back_end/cli/project"
+	"github.com/zscole/cli/cmd/project"
 )
 
 func Fatal(v ...interface{}) {
