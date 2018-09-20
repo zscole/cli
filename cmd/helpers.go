@@ -15,7 +15,6 @@ func Fatal(v ...interface{}) {
 	os.Exit(1)
 }
 
-// This function from github.com/spf13/cobra used under Apache 2.0 license
 func isEmpty(path string) bool {
 	fi, err := os.Stat(path)
 	if err != nil {
